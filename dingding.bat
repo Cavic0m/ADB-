@@ -58,8 +58,10 @@ set sender=usr@xxx.com
 ::邮箱密码
 set pwd=12345
 
+::服务器地址
+set server=smtp.xxx.com
 ::发送消息
-blat %mail% -attach %file% -s %tilte% -to %receiver% -server smtp.mxhichina.com -f %sender% -u %sender% -pw %pwd%
+blat %mail% -attach %file% -s %tilte% -to %receiver% -server %server% -f %sender% -u %sender% -pw %pwd%
 
 ::结束ADB程序
 ::taskkill /f /im adb.exe
