@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>OA文件下载器</title>
+</head>
+
+<body>
+使用说明：请在下方输入框内输入OA附件打开后的预览地址，即类似“http://47.111.67.51:7070/view/”开头的网址<br>
+输入OA预览网址：<input type="text" id="url" >
+<button onclick="myFunction()">下载</button>
+
+<script>
+function myFunction() {
+    var url = document.getElementById("url").value;
+    url = url.replace("view", "doc/download");
+    window.open(url);
+}
+</script>
+
+</body>
+</html>
